@@ -1,0 +1,25 @@
+{% extends 'movie/base.html' %}
+{% block content %}
+
+<div class="container">
+	<h1>Hope you find your movie here ;-)</h1>
+	{% for id , name in movies_list %}
+
+		<div class="row" style="border: solid;">
+			<div class="col-md-4">
+				<img src="https://images-na.ssl-images-amazon.com/images/I/A1t8xCe9jwL._SY679_.jpg"  alt="..." class="img-size-detail img-responsive mr-4 ml-4 mb-5 mt-5">
+			</div>
+			<div class="col-md-8">
+				<div style="margin-top: 10%"><h2>Movie name</h2></div>
+				<div><h3>Rating:</h3></div>
+				<div><h3>Release date:</h3></div>
+				<div><h3>Cast:</h3></div>
+				<div><h3>Director:</h3></div>
+			</div>	
+		</div>
+		
+	{% endfor %}
+
+{% endblock %}
+</div>
+ 

@@ -1,0 +1,13 @@
+{% extends 'movie/base.html' %}
+{% block content %}
+	<h1>Result</h1>
+		<div class="row text-center ">
+			{% for id , name  , image in movies_list %}
+				<div class="col-md-6 ">
+					<img src="{{image}}"  alt="..." class="img-size img-responsive mr-4 ml-4 mb-5 mt-5">
+					<div><a href={% url 'detail' id %}>{{name}}</a></div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+{% endblock %}
