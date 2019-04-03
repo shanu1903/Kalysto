@@ -23,7 +23,7 @@ bin_part2 = pd.read_csv( url , encoding = 'cp1252' )
 new_id=list(range(0,movies.shape[0]))
 bin_part2['new_id']=new_id
 movies['new_id']=new_id
-movies = movies.merge(bin_part1 , on ='new_id')
+movies = movies.merge(bin_part2 , on ='new_id')
 
 bin_part2 = 0
 # movies = movies.join(bin_part1)
