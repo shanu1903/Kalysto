@@ -9,7 +9,7 @@ import operator
 
 
 
-movies = pd.read_csv('movie\\temp_data.csv', encoding='cp1252')
+movies = pd.read_csv('temp_data.csv', encoding='cp1252')
 bin_part1 = pd.read_csv("movie\\bin_part1.csv" , encoding = 'cp1252' )
 movies = movies.iloc[: , 1:]
 bin_part2 = pd.read_csv("movie\\bin_part2.csv" , encoding = 'cp1252')
