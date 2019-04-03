@@ -16,7 +16,7 @@ movies = pd.read_csv( url , encoding = 'cp1252' )
 url = "https://raw.githubusercontent.com/shanu1903/project_data/master/bin_part2.csv"
 bin_part2 = pd.read_csv( url , encoding = 'cp1252' )
 
-movies  = bin_part1.append(bin_part2)
+movies  = movies.append(bin_part2)
 url = "https://raw.githubusercontent.com/shanu1903/project_data/master/temp_data.csv"
 bin_part2 = pd.read_csv( url , encoding = 'cp1252' )
 
