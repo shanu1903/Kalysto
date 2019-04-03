@@ -7,9 +7,10 @@ from .forms import SearchMovie
 from scipy import spatial
 import operator
 
-
-
-movies = pd.read_csv('temp_data.csv', encoding='cp1252')
+import os
+from Rengine.settings import BASE_DIR
+file_path = os.path.join(BASE_DIR, 'movie\\temp_data.csv')
+movies = pd.read_csv(file_path, encoding='cp1252')
 bin_part1 = pd.read_csv("movie\\bin_part1.csv" , encoding = 'cp1252' )
 movies = movies.iloc[: , 1:]
 bin_part2 = pd.read_csv("movie\\bin_part2.csv" , encoding = 'cp1252')
